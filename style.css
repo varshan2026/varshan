@@ -126,7 +126,7 @@ header {
 }
 
 .content h3 {
-    color: rgb(101, 255, 101);
+    color: rgb(110, 255, 110);
     font-size: 35px;
     margin-bottom: 50px;
 }
@@ -149,7 +149,7 @@ header {
     display: inline-block;
     width: 100%;
     padding: 14px 130px 14px 15px;
-    border: 2px solid rgb(101, 255, 101);
+    border: 2px solid rgb(110, 234, 110);
     border-radius: 30px;
     outline: none;
 }
@@ -161,7 +161,7 @@ header {
     outline: none;
     padding: 10px 30px;
     border-radius: 30px;
-    background-color: rgb(101, 255, 101);
+    background-color: rgb(110, 234, 110);
     color: rgb(0, 0, 0);
     cursor: pointer;
     top: 6px;
@@ -444,7 +444,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(239, 239, 239);
     color: black;
 }
 
@@ -490,4 +490,11 @@ footer{
 .copy{
     text-align: center;
     padding: 10px;
+}
+
+
+.about_content p, .skill_content p, .project_head p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 6px;
 }
