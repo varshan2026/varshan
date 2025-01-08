@@ -1,0 +1,493 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+
+#about, #skill, #contact{
+    scroll-margin-top: 120px;
+}
+
+#project{
+    scroll-margin-top: 100px;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 15px;
+}
+
+.lg_nav ul {
+    display: flex;
+    column-gap: 40px;
+    position: sticky;
+    top: 0;
+}
+
+.lg_nav ul li,
+.md_nav ul li {
+    list-style: none;
+    position: relative;
+}
+
+.lg_nav ul a,
+.md_nav ul a {
+    text-decoration: none;
+    color: rgb(240, 240, 240);
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.lg_nav ul li::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(101, 255, 101);
+    border-radius: 100px;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    bottom: 28px;
+    transition: 0.5s;
+    transform: scale(0);
+}
+
+.lg_nav ul li:hover:after {
+    transform: scale(1.2);
+}
+
+.lg_navbar img {
+    width: 80px;
+}
+
+.lg_navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 65px 0;
+    position: sticky !important;
+    top: 0 !important;
+    background-color: rgb(20, 20, 20);
+    z-index: 999;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: rgb(20, 20, 20);
+    z-index: 999;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content h1 {
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 70px;
+}
+
+.content h3 {
+    color: rgb(101, 255, 101);
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+.content h4 {
+    color: #999999;
+    font-size: 30px;
+    letter-spacing: 2px;
+
+}
+
+.newslatter form {
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+
+}
+
+.newslatter form input:first-child {
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid rgb(101, 255, 101);
+    border-radius: 30px;
+    outline: none;
+}
+
+.newslatter form input:last-child {
+    position: absolute;
+    display: inline-block;
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: rgb(101, 255, 101);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    top: 6px;
+    right: 6px;
+}
+
+.banner {
+    margin-top: 30px;
+}
+
+.banner_content {
+    position: relative;
+}
+
+.share {
+    position: absolute;
+    bottom: -80px;
+    left: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.share p {
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    margin-right: 60px;
+}
+
+.share .social a {
+    display: inline-block;
+    color: white;
+    margin-right: 15px;
+    transform: transition .4s;
+}
+
+.share .social a:hover {
+    transform: scale(1.2);
+}
+
+.banner_image img {
+    width: 500px;
+    margin-top: 10px;
+    transition: transform 0.1s ease;
+}
+
+.banner_image:hover img {
+    transform: translate(8px, 8px);
+}
+
+/* =========================================== about me ========================================= */
+
+.about_content h3 {
+    color: rgb(101, 234, 101);
+    margin-bottom: 15px;
+}
+
+.about_content {
+    width: 50%;
+}
+
+.about_content p {
+    line-height: 27px;
+    text-align: justify;
+}
+
+.about_img img {
+    max-width: 500px;
+}
+
+.about {
+    margin-top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 50px;
+}
+
+.about_content h1 {
+    margin-top: 15px;
+    background: linear-gradient(90deg, #60caf1, #ab4eee, #fa4c4c);
+    color: transparent;
+    font-weight: bold;
+    display: inline-block;
+    background-clip: text;
+}
+
+/* =========================================== Skill ========================================= */
+
+.skill_image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 50px;
+}
+
+.skill_image img {
+    width: 80%;
+}
+
+.skill {
+    margin-top: 140px;
+}
+
+.skill_content h4{
+    color: rgb(110,234,110);
+    margin-bottom: 15px;
+}
+
+.skill_content p{
+    text-align: justify;
+}
+
+.skill_content{
+    width: 50%;
+    padding: 0 20px;
+}
+
+.skill_flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.skill_content h1 {
+    margin-top: 25px;
+    background: linear-gradient(90deg, #60caf1, #ab4eee, #fa4c4c);
+    color: transparent;
+    font-weight: bold;
+    display: inline-block;
+    background-clip: text;
+}
+
+/* =========================================== Project ========================================= */
+
+.project_container img{
+    width: 500px;
+    filter: grayscale(10);
+}
+
+.project_container img:hover{
+    filter: grayscale(0);
+}
+
+.project_container{
+    border: 1px solid rgb(110, 234, 110);
+    padding: 25px;
+    margin: 25px;
+}
+
+.project_container a{
+    text-decoration: none;
+    color: rgb(110,234,110);
+}
+
+.project_container h6{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.project_flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.Project{
+    margin-top: 130px;
+}
+
+.project_head h1 {
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #60caf1, #ab4eee, #fa4c4c);
+    color: transparent;
+    font-weight: bold;
+    display: inline-block;
+    background-clip: text;
+}
+
+.project_head{
+    text-align: center;
+}
+
+/* =========================================== contact ========================================= */
+
+.contact_box {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form lable {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-bottom: 2px solid rgb(110, 234, 110);
+    background-color: transparent;
+}
+
+form input[type="text"]:focus,
+form textarea:focus{
+    outline: none;
+}
+
+form textarea {
+    height: 100px;
+}
+
+.contact_box button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.contact_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact_content{
+    width: 50%;
+}
+
+.contact_content h5{
+    color: rgb(110, 234, 110);
+    margin-bottom: 30px;
+}
+
+.contact_content p{
+    line-height: 1.8;
+}
+
+.contact_content h1 {
+    margin-top: 25px;
+    background: linear-gradient(90deg, #60caf1, #ab4eee, #fa4c4c);
+    color: transparent;
+    font-weight: bold;
+    display: inline-block;
+    background-clip: text;
+}
+
+.contact{
+    margin-top: 100px;
+}
+
+
+/* =========================================== footer ========================================= */
+
+footer{
+    margin-top: 80px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(230, 230, 230);
+    color: black;
+}
+
+.divone{
+    width: 30%;
+}
+
+.divone img{
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.ftr_link{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.9;
+}
+
+.ftr_link a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.ftr_link_project{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.9;
+}
+
+.ftr_link_project a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.project_ftr{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 50px;
+}
+
+.copy{
+    text-align: center;
+    padding: 10px;
+}
